@@ -1,0 +1,54 @@
+
+body{
+    min-height: 100vh;
+    background-color: #f7ecde;
+}
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    box-sizing: border-box;
+}
+a {
+    text-decoration: none;
+}
+::selection {
+    background-color: #fec260;
+    color: #352e28;
+}
+h1{
+    font-size: 50px;
+    font-family: "Pacifico", cursive;
+    color: #352e28;
+    isolation: isolate;
+}
+.content{
+        border-width: 2px 0 2px 0;
+    border-style: dotted;
+    border-color: #352e28;
+
+}
+.content h2 {
+    font-family: "Righteous", cursive;
+    font-size: 25px;
+    background-image: linear-gradient(to right, #3ca55c, #b5ac49);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+}
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+    margin-top: 0;
+    margin-bottom: .5rem;
+    font-weight: 500;
+    line-height: 1.2;
+}
+.btn-style{
+    background: #d1512d !important;
+    color: white !important;
+    padding-left: 50px !important;
+    padding-right: 50px !important;
+}
+.btn-style:hover{
+    background: #a03315 !important;
+}
