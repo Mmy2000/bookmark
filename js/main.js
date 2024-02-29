@@ -9,5 +9,10 @@ function addSite() {
     }
     sites.push(site);
     console.log(sites);
-    
+    clear();
+
+}
+function clear() {
+    siteName.value = ""
+    siteUrl.value = ""
 }
