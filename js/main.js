@@ -1,6 +1,13 @@
 var siteName = document.getElementById("websiteName");
 var siteUrl = document.getElementById("websiteUrl");
-sites = [];
+var sites ; 
+
+if (localStorage.getItem("userSites")) {
+    sites = JSON.parse(localStorage.getItem("userSites"));
+    displayBookmark();
+}else{
+    sites = [];
+}
 
 function addSite() {
     var site = {
