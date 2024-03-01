@@ -8,6 +8,7 @@ function addSite() {
         url : siteUrl.value
     }
     sites.push(site);
+    localStorage.setItem("userSites",JSON.stringify(sites))
     console.log(sites);
     clear();
     displayBookmark();
