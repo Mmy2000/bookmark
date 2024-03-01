@@ -31,7 +31,7 @@ function displayBookmark() {
         urlBox += `<tr>
                         <th scope="row">${i+1}</th>
                         <td>${sites[i].names}</td>
-                        <td><a href="${sites[i].url}"  class="btn btn-info "><i class="fa-solid fa-eye pe-1"></i>Visit</a></td>
+                        <td><a target="_blank" href="${sites[i].url}"  class="btn btn-info "><i class="fa-solid fa-eye pe-1"></i>Visit</a></td>
                         <td><button class="btn btn-danger"><i class="fa-solid fa-trash-can pe-1"></i>Delete</button></td>
                     </tr>`
         
