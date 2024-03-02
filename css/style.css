@@ -1,8 +1,8 @@
-
-body{
+body {
     min-height: 100vh;
     background-color: #f7ecde;
 }
+
 html {
     scroll-behavior: smooth;
 }
@@ -10,21 +10,25 @@ html {
 * {
     box-sizing: border-box;
 }
+
 a {
     text-decoration: none;
 }
+
 ::selection {
     background-color: #fec260;
     color: #352e28;
 }
-h1{
+
+h1 {
     font-size: 50px;
     font-family: "Pacifico", cursive;
     color: #352e28;
     isolation: isolate;
     position: relative;
 }
- h1::before {
+
+h1::before {
     content: "";
     position: absolute;
     width: 20%;
@@ -35,15 +39,18 @@ h1{
     transition: height 350ms;
     z-index: -1;
 }
+
 h1:hover::before {
     height: 50%;
 }
-.content{
-        border-width: 2px 0 2px 0;
+
+.content {
+    border-width: 2px 0 2px 0;
     border-style: dotted;
     border-color: #352e28;
 
 }
+
 .content h2 {
     font-family: "Righteous", cursive;
     font-size: 25px;
@@ -52,25 +59,41 @@ h1:hover::before {
     -webkit-text-fill-color: transparent;
 
 }
-.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     margin-top: 0;
     margin-bottom: .5rem;
     font-weight: 500;
     line-height: 1.2;
 }
-.btn-style{
+
+.btn-style {
     background: #d1512d !important;
     color: white !important;
     padding-left: 50px !important;
     padding-right: 50px !important;
 }
-.btn-style:hover{
+
+.btn-style:hover {
     background: #a03315 !important;
 }
-.content input:focus{
+
+.content input:focus {
     color: #212529;
     background-color: #fff;
     border-color: #d99c39;
     outline: 0;
     box-shadow: 0 0 0 0.25rem #fec26055;
 }
+
