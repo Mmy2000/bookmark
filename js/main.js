@@ -10,6 +10,19 @@ if (localStorage.getItem("userSites")) {
 }
 
 function addSite() {
+    var siteNameValue = siteName.value.trim();
+    var siteUrlValue = siteUrl.value.trim();
+
+    if (siteNameValue === "" || siteUrlValue === "") {
+        alert("Please enter both site name and URL.");
+        return;
+    }
+
+    var urlPattern = /^((http|https|ftp):\/\/)/;
+    if (!urlPattern.test(siteUrlValue)) {
+        alert("Please enter a valid URL with http:// or https://");
+        return;
+    }
     var site = {
         names : siteName.value,
         url : siteUrl.value
@@ -19,8 +32,8 @@ function addSite() {
     console.log(sites);
     clear();
     displayBookmark();
-
 }
+
 function clear() {
     siteName.value = ""
     siteUrl.value = ""
